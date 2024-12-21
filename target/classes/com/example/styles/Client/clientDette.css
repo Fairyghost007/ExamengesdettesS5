@@ -1,0 +1,88 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* Style for the TableView */
+.table-view {
+    -fx-background-color: #2F2B43; /* Light background color */
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+}
+
+/* Style for the TableColumns header */
+.table-view .column-header {
+    -fx-background-color: #524A7B; /* Header background color */
+    -fx-text-fill: white; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-fill:#EEEEEE;
+    -fx-border-color: #A868A0; /* Right border color */
+    -fx-border-width: 0 1px 0 0; 
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #EEEEEE; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-padding: 5px;  /* Padding for header cells */
+}
+
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Makes the scrollbar invisible */
+    -fx-pref-width: 0; /* Collapses the scrollbar width */
+    -fx-pref-height: 0; /* Collapses the scrollbar height */
+}
+
+/* Style for the TableColumn cells */
+.table-view .table-row-cell {
+    -fx-border-color: #A868A0; /* Cell border color */
+    -fx-border-width: 0 1px 1px 0; /* Bottom border for each row */
+    -fx-background-color: white; /* Default background color for rows */
+}
+
+/* Style for the selected TableRow */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #8A4E8C; /* Selected row background color */
+    -fx-text-fill: white; /* Selected row text color */
+}
+
+/* Hover effect for rows */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #A868A0; /* Background color on hover */
+}
+
+
+.metricsBox{
+    -fx-background-color: #524A7B;
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 5px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+}
+
+.metricsCard{
+    -fx-background-color: #2F2B43;
+    -fx-border-color: white; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 5px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+}
+
+.metricsCard FontAwesomeIconView{
+    -fx-fill: #A868A0;
+
+}
+.metricsCard Text{
+    -fx-font-size: 1em;
+}
+
+.metricsCard Label{
+    -fx-fill: #A868A0;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="180.0" styleClass="menu" stylesheets="@../../styles/Client/sidebar.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Client.ClientMenuController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="160.0" styleClass="sidebar" stylesheets="@../../styles/Client/sidebar.css">
+         <children>
+            <VBox prefHeight="80.0" prefWidth="160.0" styleClass="Titre" stylesheets="@../../styles/Client/sidebar.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="MONEY" size="40" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ges Dette" />
+               </children>
+            </VBox>
+            <VBox layoutY="310.0" prefHeight="250.0" prefWidth="160.0" styleClass="Titre" stylesheets="@../../styles/Client/sidebar.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <Button fx:id="clientDetteBtn" mnemonicParsing="false" onAction="#showClientDette" prefHeight="90.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Dettes" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="clientDemandeBtn" mnemonicParsing="false" onAction="#showClientDemande" prefHeight="90.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Demandes" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ENVELOPE" size="20" />
+                     </graphic>
+                  </Button>
+                  <Line endX="120.0" stroke="#a868a0">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin></Line>
+               </children>
+            </VBox>
+            <Button fx:id="logoutBtn" layoutX="5.0" layoutY="336.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="150.0" styleClass="logout" stylesheets="@../../styles/Client/sidebar.css" text="Logout" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="30" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

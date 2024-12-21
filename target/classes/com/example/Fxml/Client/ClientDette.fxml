@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="510.0" stylesheets="@../../styles/Client/clientDette.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Client.ClientDetteController">
+   <children>
+      <TableView fx:id="table" layoutX="10.0" layoutY="210.0" prefHeight="200.0" prefWidth="491.0" stylesheets="@../../styles/Client/clientDette.css">
+        <columns>
+          <TableColumn fx:id="cId" prefWidth="62.498642921447754" text="id" />
+          <TableColumn fx:id="cMontant" prefWidth="194.75570678710938" text="montant" />
+            <TableColumn fx:id="cMontantVerser" prefWidth="210.03515625" text="montant verser" />
+        </columns>
+      </TableView>
+      <HBox layoutX="8.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="120.0" prefWidth="493.0" spacing="15.0" styleClass="metricsBox" stylesheets="@../../styles/Client/clientDette.css">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="150.0" styleClass="metricsCard" stylesheets="@../../styles/Client/clientDette.css">
+               <children>
+                  <FontAwesomeIconView glyphName="INBOX" layoutX="6.0" layoutY="34.0" size="20" wrappingWidth="13.0" />
+                  <Text fill="WHITE" layoutX="30.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre de Dettes" />
+                  <Label fx:id="nDettes" layoutX="9.0" layoutY="51.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="150.0" styleClass="metricsCard" stylesheets="@../../styles/Client/clientDette.css">
+               <children>
+                  <FontAwesomeIconView glyphName="MONEY" layoutX="6.0" layoutY="36.0" size="20" wrappingWidth="13.0" />
+                  <Text fill="WHITE" layoutX="29.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Montant Dette" />
+                  <Label fx:id="totalDette" layoutX="8.0" layoutY="53.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="150.0" styleClass="metricsCard" stylesheets="@../../styles/Client/clientDette.css">
+               <children>
+                  <FontAwesomeIconView glyphName="EXCLAMATION" layoutX="8.0" layoutY="38.0" size="20" wrappingWidth="13.0" />
+                  <Text fill="WHITE" layoutX="20.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Demandes En Cours" />
+                  <Label fx:id="nDemandes" layoutX="8.0" layoutY="53.0" text="0" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="2.0" />
+   </padding>
+</AnchorPane>

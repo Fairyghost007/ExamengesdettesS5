@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane styleClass="body" fx:id="mainPane" stylesheets="@../../styles/Client/clientMain.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.controllers.Client.ClientMainController">
+    <left>
+        <!-- Static include for the sidebar -->
+        <fx:include source="ClientMenu.fxml" />
+    </left>
+    <center>
+        <!-- Placeholder AnchorPane for dynamically loading ClientDette -->
+        <AnchorPane fx:id="contentPane" prefHeight="410.0" prefWidth="0.0" />
+    </center>
+</BorderPane>

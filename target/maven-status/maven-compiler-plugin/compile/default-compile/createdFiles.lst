@@ -1,0 +1,6 @@
+com/example/core/config/repository/impl/jpa/RepositoryJpaImpl.class
+module-info.class
+com/example/core/Factory2/Repo/FactoryClient.class
+com/example/core/config/repository/Repository.class
+com/example/repositories/jpa/ClientRepositoryJpa.class
+com/example/repositories/jpa/impl/ClientRepositoryJpaImpl.class

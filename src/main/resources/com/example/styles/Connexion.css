@@ -1,0 +1,89 @@
+.root {
+    -fx-font-family: "Arial";
+}
+.container{
+    -fx-background-color:#141124;
+    
+}
+
+.aside{
+    -fx-background-color: #2F2B43;
+    -fx-alignment: CENTER;
+}
+
+
+.aside Text{
+    -fx-font-size: 2em;
+    -fx-fill:#EEEEEE;
+}
+
+
+.aside FontAwesomeIconView{
+    -fx-fill:#A868A0
+
+}
+
+
+.form{
+    -fx-background-color: #2F2B43 ;
+    -fx-spacing: 15;
+    -fx-alignment: CENTER;
+    -fx-border-radius: 10px;    
+    -fx-background-radius: 10px;   
+}
+
+.input_container{
+    -fx-pref-height:60;
+    -fx-fill-width: 250;
+}
+
+.text_form{
+    -fx-font-size:2em;
+    -fx-font-weight: bold;
+    -fx-fill:#EEEEEE;
+}
+
+.form Label{
+    -fx-text-fill:#ffffff ;
+    -fx-fill:#EEEEEE;
+    -fx-font-size: 1.1em;
+    -fx-font-weight: bold;
+    -fx-alignment: TOP_LEFT;
+}
+
+.input_field{
+    /* -fx-background-color: ; */
+    -fx-text-fill:#000000;
+    -fx-font-size: 1.2em;
+    -fx-pref-height: 30;
+    -fx-fill-width: 250;
+    -fx-pref-width: 250;
+    /* -fx-background-color: red; */
+    /* background-color: red; */
+}
+
+.form Button{
+    /* -fx-background-color: ; */
+    -fx-font-size: 1.2em;
+    -fx-pref-height: 30;
+    -fx-pref-width: 250;
+    -fx-background-color: #8A4E8C;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-cursor: HAND;
+    -fx-text-fill:#ffffff ;
+    -fx-fill:#EEEEEE;
+}
+
+.form Button{
+    -fx-cursor:hand;
+}
+
+.error{
+    -fx-text-fill:#8A4E8C;
+    -fx-fill:#8A4E8C;
+}
+
+
+

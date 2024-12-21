@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="510.0" stylesheets="@../../styles/Boutiquier/BoutiquierArticle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Boutiquier.BoutiquierDetteController">
+   <children>
+      <HBox layoutX="5.0" layoutY="14.0" prefHeight="73.0" prefWidth="500.0" styleClass="filterAddBox">
+         <children>
+            <HBox prefHeight="59.0" prefWidth="217.0" styleClass="shearchBox">
+               <children>
+                  <Label prefHeight="16.0" prefWidth="96.0" text="Non Solder" />
+                  <JFXToggleButton fx:id="toggleBtn" text="Solder" textFill="WHITE" toggleColor="#524a7b" toggleLineColor="#a868a0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      
+      <TableView fx:id="table" layoutX="4.0" layoutY="122.0" prefHeight="200.0" prefWidth="502.0" stylesheets="@../../styles/Boutiquier/BoutiquierArticle.css">
+        <columns>
+          <TableColumn fx:id="cDate" prefWidth="92.0" text="Date" />
+          <TableColumn fx:id="cMontant" prefWidth="66.0" text="Montant" />
+            <TableColumn fx:id="cMontantVerser" prefWidth="74.0" text="M_Verser" />
+            <TableColumn fx:id="cMontantRestant" prefWidth="82.0" text="M_Restant" />
+            <TableColumn fx:id="cActions" prefWidth="165.0" text="Actions" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

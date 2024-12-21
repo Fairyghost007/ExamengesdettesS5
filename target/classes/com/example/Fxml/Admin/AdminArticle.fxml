@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="510.0" stylesheets="@../../styles/Boutiquier/BoutiquierArticle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Admin.AdminArticleController">
+   <children>
+      <HBox layoutX="4.0" layoutY="14.0" prefHeight="50.0" prefWidth="500.0" spacing="190.0" styleClass="filterAddBox">
+         <children>
+            <HBox prefHeight="36.0" prefWidth="255.0" spacing="5.0" styleClass="shearchBox">
+               <children>
+                  <Label text="Disponible" />
+                  <JFXToggleButton fx:id="toggleBtn" prefHeight="23.0" prefWidth="160.0" text="Non Disponible" textFill="WHITE" toggleColor="#524a7b" toggleLineColor="#a868a0" />
+               </children>
+            </HBox>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#redirectToAddArticle" text="Add" textFill="WHITE" />
+         </children>
+      </HBox>
+      <TableView fx:id="table" layoutX="5.0" layoutY="110.0" prefHeight="200.0" prefWidth="500.0" stylesheets="@../../styles/Boutiquier/BoutiquierArticle.css">
+        <columns>
+          <TableColumn fx:id="cLibelle" prefWidth="112.0" text="Libelle" />
+          <TableColumn fx:id="cPrix" prefWidth="91.0" text="Prix" />
+            <TableColumn fx:id="cQuantite" prefWidth="147.0" text="Quantite" />
+            <TableColumn fx:id="cActions" prefWidth="126.0" text="Actions" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

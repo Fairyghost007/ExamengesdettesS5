@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="423.0" prefWidth="499.0" stylesheets="@../../styles/Boutiquier/BoutiquierAddArticle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Client.ClientAddDemandeController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="475.0" spacing="15.0" styleClass="addArticleBox">
+         <children>
+            <!-- Title Section -->
+            <HBox prefHeight="52.0" prefWidth="560.0" spacing="10.0" styleClass="titleBox">
+               <children>
+                  <FontAwesomeIconView glyphName="CART_PLUS" size="25" />
+                  <Label styleClass="titleLabel" text="Add New Demande" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <VBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="72.0" prefWidth="500.0" spacing="10.0">
+                     <children>
+                        
+                        <!-- Article Selection -->
+                        <Label styleClass="formLabel" text="Article:" />
+                        <ComboBox fx:id="cbArticle" prefHeight="39.0" prefWidth="288.0" promptText="Select an article" styleClass="inputField" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="67.0" prefWidth="340.0" spacing="10.0">
+                     <children>
+                        
+                              <!-- Quantity Input -->
+                        <Label styleClass="formLabel" text="Quantity:" />
+                        <HBox prefHeight="50.0" prefWidth="265.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="quantityField" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="39.0" prefWidth="59.0" promptText="quantity" styleClass="inputField" />
+                              <Button fx:id="addArticleButton" onAction="#handleAddArticle" prefHeight="39.0" prefWidth="50.0" styleClass="formButton" text="Add" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            
+            <!-- TableView Section -->
+            <TableView fx:id="articleTable" prefHeight="200.0" prefWidth="560.0">
+               <columns>
+                  <TableColumn fx:id="articleNameColumn" prefWidth="145.62166595458984" text="Article" />
+                  <TableColumn fx:id="quantityColumn" prefWidth="161.87832641601562" text="Quantity" />
+                  <TableColumn fx:id="totalColumn" prefWidth="100.46484375" text="Total" />
+               </columns>
+            </TableView>
+            
+            <!-- Final Action Buttons -->
+            <HBox prefHeight="32.0" prefWidth="560.0" spacing="5.0" styleClass="btnBox">
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="299.0" styleClass="shearchBox">
+                     <children>
+                        <Label text="Total: " textFill="WHITE" />
+                        <Text fx:id="totalMontantDette" strokeType="OUTSIDE" strokeWidth="0.0" text="" wrappingWidth="226.01396465301514" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <Button fx:id="cancelButton" onAction="#handleCancel" styleClass="formButton" text="Cancel" />
+                        <Button fx:id="submitButton" onAction="#handleSaveDette" styleClass="formButton" text="Submit" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

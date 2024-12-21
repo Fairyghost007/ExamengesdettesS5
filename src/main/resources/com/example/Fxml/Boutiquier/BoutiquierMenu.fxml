@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="180.0" styleClass="menu" stylesheets="@../../styles/Boutiquier/BoutiquierMenu.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.Boutiquier.BoutiquierMenuController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="160.0" styleClass="sidebar" stylesheets="@../../styles/Client/sidebar.css">
+         <children>
+            <VBox prefHeight="34.0" prefWidth="160.0" styleClass="Titre" stylesheets="@../../styles/Client/sidebar.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIconView glyphName="MONEY" size="40" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ges Dette" />
+               </children>
+            </VBox>
+            <VBox layoutY="72.0" prefHeight="349.0" prefWidth="160.0" styleClass="Titre" stylesheets="@../../styles/Client/sidebar.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="72.0">
+               <children>
+                  <Button fx:id="articleBtn" minHeight="-Infinity" mnemonicParsing="false" onAction="#showArticle" prefHeight="70.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Articles" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="SHOPPING_BAG" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="clientBtn" onAction="#showClient" minHeight="-Infinity" mnemonicParsing="false"  prefHeight="70.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Clients" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USER" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="userBtn" onAction="#showUser" minHeight="-Infinity" mnemonicParsing="false"  prefHeight="70.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Users" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="USERS" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="detteBtn" onAction="#showDette" minHeight="-Infinity" mnemonicParsing="false"  prefHeight="70.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Dettes" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CREDIT_CARD" size="20" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="demandeBtn" onAction="#showDemande"  minHeight="-Infinity" mnemonicParsing="false"  prefHeight="70.0" prefWidth="160.0" stylesheets="@../../styles/Client/sidebar.css" text="Demandes" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ENVELOPE" size="20" />
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Button fx:id="logoutBtn" layoutX="6.0" layoutY="440.0" mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="150.0" styleClass="logout" stylesheets="@../../styles/Client/sidebar.css" text="Logout" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="30" />
+               </graphic>
+            </Button>
+            <Line endX="120.0" layoutX="19.0" layoutY="430.0" stroke="#a868a0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

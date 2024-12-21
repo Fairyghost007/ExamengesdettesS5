@@ -1,0 +1,151 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* Style for the VBox containing the form */
+.addArticleBox {
+    -fx-background-color: #2F2B43; /* Light background color */
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px;
+    -fx-padding: 20px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+/* Title label style */
+.titleLabel {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #EEEEEE;
+    -fx-alignment: CENTER;
+    -fx-padding-bottom: 10px;
+}
+
+/* Style for form labels */
+.formLabel {
+    -fx-text-fill: #EEEEEE;
+    -fx-font-weight: bold;
+}
+
+/* Style for input fields */
+.inputField {
+    -fx-border-color: #A868A0;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-background-color: white;
+}
+
+/* Style for form buttons */
+.formButton {
+    -fx-background-color: #2F2B43;
+    -fx-text-fill: #EEEEEE;
+    -fx-border-color: #A868A0;
+    -fx-border-width: 2px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-cursor: HAND;
+}
+
+.formButton:hover {
+    -fx-background-color: #dfc5e0;
+    -fx-text-fill: #2F2B43;
+}
+
+.btnBox{
+    -fx-alignment: CENTER_RIGHT;
+}
+
+.titleBox{
+    -fx-alignment: CENTER;
+}
+.titleBox2{
+    /* -fx-alignment:; */
+}
+.titleBox2  FontAwesomeIconView {
+    -fx-fill: #A868A0;
+    -fx-font-size: 1.5em; /* Adjust icon size as needed */
+}
+
+.titleBox  FontAwesomeIconView {
+    -fx-fill: #A868A0;
+    -fx-font-size: 1.5em; /* Adjust icon size as needed */
+}
+
+
+.error{
+    -fx-text-fill:#8A4E8C;
+    -fx-fill:#8A4E8C;
+}
+
+.table-view {
+    -fx-background-color: #2F2B43; /* Light background color */
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+}
+
+/* Style for the TableColumns header */
+.table-view .column-header {
+    -fx-background-color: #524A7B; /* Header background color */
+    -fx-text-fill: white; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-fill:#EEEEEE;
+    -fx-border-color: #A868A0; /* Right border color */
+    -fx-border-width: 0 1px 0 0; 
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: #EEEEEE; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-padding: 5px;  /* Padding for header cells */
+}
+
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Makes the scrollbar invisible */
+    -fx-pref-width: 0; /* Collapses the scrollbar width */
+    -fx-pref-height: 0; /* Collapses the scrollbar height */
+}
+
+/* Style for the TableColumn cells */
+.table-view .table-row-cell {
+    -fx-border-color: #A868A0; /* Cell border color */
+    -fx-border-width: 0 1px 1px 0; /* Bottom border for each row */
+    -fx-background-color: white; /* Default background color for rows */
+}
+
+/* Style for the selected TableRow */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #8A4E8C; /* Selected row background color */
+    -fx-text-fill: white; /* Selected row text color */
+}
+
+/* Hover effect for rows */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #A868A0; /* Background color on hover */
+}
+
+.shearchBox{
+    -fx-alignment: CENTER_LEFT;
+}
+
+.shearchBox Label{
+    -fx-font-weight: bold;
+    -fx-font-size: 1.8em;
+}
+.shearchBox Text{
+    -fx-font-weight: bold;
+    -fx-font-size: 1.8em;
+    -fx-text-fill: #A868A0; 
+    -fx-fill:#A868A0;
+}
+
+
+
+

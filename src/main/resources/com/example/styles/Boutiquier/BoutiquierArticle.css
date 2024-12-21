@@ -1,0 +1,124 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+/* Style for the TableView */
+.table-view {
+    -fx-background-color: #2F2B43; /* Light background color */
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+}
+
+/* Style for the TableColumns header */
+.table-view .column-header {
+    -fx-background-color: #524A7B; /* Header background color */
+    -fx-text-fill: white; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-fill:#EEEEEE;
+    -fx-border-color: #A868A0; /* Right border color */
+    -fx-border-width: 0 1px 0 0; 
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: #EEEEEE; /* Header text color */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-padding: 5px;  /* Padding for header cells */
+}
+
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0; /* Makes the scrollbar invisible */
+    -fx-pref-width: 0; /* Collapses the scrollbar width */
+    -fx-pref-height: 0; /* Collapses the scrollbar height */
+}
+
+/* Style for the TableColumn cells */
+.table-view .table-row-cell {
+    -fx-border-color: #A868A0; /* Cell border color */
+    -fx-border-width: 0 1px 1px 0; /* Bottom border for each row */
+    -fx-background-color: white; /* Default background color for rows */
+}
+
+/* Style for the selected TableRow */
+.table-view .table-row-cell:selected {
+    -fx-background-color: #8A4E8C; /* Selected row background color */
+    -fx-text-fill: white; /* Selected row text color */
+}
+
+/* Hover effect for rows */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #A868A0; /* Background color on hover */
+}
+
+
+.filterAddBox{
+    -fx-background-color: #2F2B43;
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-padding: 5px; /* Padding around the table */
+    -fx-background-radius: 10px; /* Rounded corners for the background */
+    -fx-border-radius: 10px; /* Rounded corners for the background */
+    -fx-alignment: CENTER_LEFT;
+
+}
+
+.filterAddBox Label{
+    -fx-text-fill: #EEEEEE;
+    -fx-font-weight: bold;
+    -fx-font-size: 1em;
+}
+
+.shearchBox{
+    -fx-alignment: CENTER;
+}
+
+
+.filterAddBox Button {
+    -fx-alignment: CENTER;
+    -fx-content-display: TOP; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-background-color: #524A7B;
+    -fx-cursor: HAND;
+
+}
+.filterAddBox Button:hover {
+    -fx-background-color: #dfc5e0; 
+    -fx-cursor: HAND; 
+    /* -fx-background-color :#524A7B; */
+}
+
+/* Optional: Style for FontAwesomeIconView within the Button */
+.filterAddBox Button FontAwesomeIconView {
+    -fx-fill: #A868A0;
+    -fx-font-size: 1.5em; /* Adjust icon size as needed */
+}
+
+.filterAddBox TextField{
+    -fx-border-color: #A868A0; /* Border color */
+    -fx-border-width: 2px; 
+    -fx-background-radius: 5px; /* Rounded corners for the background */
+    -fx-border-radius: 5px; 
+
+}
+.AV-button{
+    -fx-background-color: #8A4E8C;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-cursor: HAND;
+    -fx-font-size: 1em;
+    -fx-text-fill:#EEEEEE;
+}
+.AV-button:hover{
+    -fx-background-color: #EEEEEE;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-cursor: HAND;
+    -fx-font-size: 1em;
+    -fx-text-fill:#8A4E8C;
+}

@@ -1,0 +1,67 @@
+.root {
+    -fx-font-family: "Arial";
+}
+
+.Titre{
+    -fx-alignment: CENTER;
+}
+.Titre FontAwesomeIconView{
+    -fx-fill:#A868A0
+
+}
+.Titre Text{
+    -fx-font-size: 2em;
+    -fx-fill:#EEEEEE;
+}
+
+.Titre Button {
+    -fx-alignment: CENTER;
+    -fx-content-display: TOP; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-background-color: #2F2B43;
+    -fx-cursor: HAND;
+
+}
+.Titre Button:hover {
+    /* -fx-background-color: #dfc5e0; Change this to the desired hover color */
+    -fx-cursor: HAND; /* Pointer cursor on hover */
+    /* -fx-background-color: transparent;
+    -fx-background-color: #A868A0; */
+    -fx-background-color :#524A7B;
+}
+
+/* Optional: Style for FontAwesomeIconView within the Button */
+.Titre Button FontAwesomeIconView {
+    -fx-fill: #A868A0;
+    -fx-font-size: 1.5em; /* Adjust icon size as needed */
+}
+
+/* Optional: Style for Text within the Button */
+.Titre Button Text {
+    -fx-font-size: 1em;
+    -fx-fill: #EEEEEE;
+}
+
+.sidebar{
+    -fx-background-color: #2F2B43;
+    -fx-alignment: CENTER;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;   
+}
+
+.logout {
+    -fx-background-color: #8A4E8C;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT; /* Displays content in a vertical stack */
+    -fx-text-alignment: CENTER;
+    -fx-cursor: HAND;
+}
+.logout FontAwesomeIconView{
+    -fx-fill: #EEEEEE;
+}
+
+.menu{
+    /* -fx-background-color: #41951C; */
+    -fx-alignment: CENTER;
+    -fx-text-alignment: CENTER;
+}
